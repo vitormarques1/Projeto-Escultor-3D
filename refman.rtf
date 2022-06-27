@@ -1,0 +1,996 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment Projeto Escultor3D  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}Projeto Escultor3D}
+{\comment Gerado por doxygen 1.9.4.}
+{\creatim \yr2022\mo6\dy26\hr16\min15\sec20}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Projeto Escultor3D}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Vers\'E3o 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Domingo, 26 de Junho de 2022 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Sum\'E1rio\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CDndice dos Componentes\par \pard\plain 
+{\tc \v \'CDndice dos Componentes}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista de Classes\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Aqui est\'E3o as classes, estruturas, uni\'F5es e interfaces e suas respectivas descri\'E7\'F5es:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Sculptor} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Voxel} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CDndice dos Arquivos\par \pard\plain 
+{\tc \v \'CDndice dos Arquivos}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista de Arquivos\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Esta \'E9 a lista de todos os arquivos e suas respectivas descri\'E7\'F5es:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b Projeto Escultor3D/{\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Projeto Escultor3D/{\b sculptor.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Projeto Escultor3D/{\b sculptor.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Classes{\tc \v Classes}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia da Classe Sculptor\par \pard\plain 
+{\tc\tcl2 \v Sculptor}
+{\xe \v Sculptor}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+\par
+{
+{\f2 #include <sculptor.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Membros P\'FAblicos\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Sculptor} (int _nx, int _ny, int _nz)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~Sculptor} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b setColor} (float r, float g, float b, float alpha)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b putVoxel} (int x, int y, int z)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b cutVoxel} (int x, int y, int z)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b putBox} (int x0, int x1, int y0, int y1, int z0, int z1)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b cutBox} (int x0, int x1, int y0, int y1, int z0, int z1)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b putSphere} (int xcenter, int ycenter, int zcenter, int radius)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b cutSphere} (int xcenter, int ycenter, int zcenter, int radius)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b putEllipsoid} (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b cutEllipsoid} (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b writeOFF} (char *filename)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Construtores e Destrutores\par
+\pard\plain 
+{\xe \v Sculptor\:Sculptor}
+{\xe \v Sculptor\:Sculptor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Sculptor::Sculptor (int  {\i _nx}, int  {\i _ny}, int  {\i _nz})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 10                                            \{\par
+11     nx = nx1;\par
+12     ny = ny1;\par
+13     nz = nz1;\par
+14     r = 0.5;\par
+15     g = 0.5; \par
+16     b = 0.5;\par
+17     a = 1;\par
+18   \par
+19   {\cf20 // Aloca\'E7\'E3o din\'E2mica da matriz 3d}\par
+20     v = {\cf17 new} Voxel**[nx];\par
+21      {\cf19 for} ({\cf18 int} i =0; i<nx; i++)\{\par
+22       v[i] = {\cf17 new} Voxel*[ny];\par
+23 \par
+24      {\cf19 for} ({\cf18 int} j =0; j<ny; j++)\{\par
+25        v[i][j]= {\cf17 new} Voxel[nz];\par
+26       \}\par
+27     \}\par
+28 \}\par
+}
+}
+{\xe \v ~Sculptor\:Sculptor}
+{\xe \v Sculptor\:~Sculptor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Sculptor::~Sculptor ()}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 30                    \{\par
+31     {\cf19 for}({\cf18 int} i = 0; i < nx; i++)\{\par
+32         {\cf19 for} ({\cf18 int} j = 0; j < ny; j++)\{\par
+33                {\cf17 delete}[] v[i][j];\par
+34             \}\par
+35         \}\par
+36         {\cf19 for} ({\cf18 int} i=0; i <nx; i++)\{\par
+37             {\cf17 delete}[] v[i];\par
+38         \}\par
+39 \par
+40         {\cf17 delete}[] v;\par
+41 \par
+42         nx = 0;\par
+43         ny = 0;\par
+44         nz = 0;\par
+45 \};\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es membros\par
+\pard\plain 
+{\xe \v cutBox\:Sculptor}
+{\xe \v Sculptor\:cutBox}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::cutBox (int  {\i x0}, int  {\i x1}, int  {\i y0}, int  {\i y1}, int  {\i z0}, int  {\i z1})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 80 \{\par
+81     {\cf19 for}({\cf18 int} x = x0; x<x1; x++)\{\par
+82        {\cf19 for} ({\cf18 int} y = y0; y<y1; y++)\{\par
+83            {\cf19 for} ({\cf18 int} z = z0; z<z1; z++)\{\par
+84                v[x][y][z].isOn = {\cf17 false};\par
+85            \}\par
+86        \}\par
+87     \}\par
+88 \}\par
+}
+}
+{\xe \v cutEllipsoid\:Sculptor}
+{\xe \v Sculptor\:cutEllipsoid}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::cutEllipsoid (int  {\i xcenter}, int  {\i ycenter}, int  {\i zcenter}, int  {\i rx}, int  {\i ry}, int  {\i rz})}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 134                                                                                         \{\par
+135    {\cf18 double} newx, newy, newz;\par
+136 \par
+137     {\cf19 for} ({\cf18 int} x = 0; x < nx; x++)\{\par
+138         {\cf19 for} ({\cf18 int} y = 0; y < ny; y++)\{\par
+139             {\cf19 for} ({\cf18 int} z = 0; z < nz; z++)\{\par
+140             newx = ((float)(x-xcenter)*(float)(x-xcenter))/(rx * rx);\par
+141             newy = ((float)(y-ycenter)*(float)(y-ycenter))/(ry * ry);\par
+142             newz = ((float)(z-zcenter)*(float)(z-zcenter))/(rz * rz);\par
+143 \par
+144             {\cf19 if} ((newx + newy + newz) < 1)\{\par
+145                 cutVoxel(x,y,z);\par
+146             \}\par
+147             \}\par
+148         \}\par
+149     \}\par
+150 \}\par
+}
+}
+{\xe \v cutSphere\:Sculptor}
+{\xe \v Sculptor\:cutSphere}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::cutSphere (int  {\i xcenter}, int  {\i ycenter}, int  {\i zcenter}, int  {\i radius})}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 104                                                                          \{\par
+105   {\cf19 for}({\cf18 int} i = -radius; i<radius; i++)\{\par
+106       {\cf19 for}({\cf18 int} j = -radius; j<radius; j++)\{\par
+107           {\cf19 for}({\cf18 int} k = -radius; k<radius; k++)\{\par
+108             {\cf19 if}((i*i+j*j+k*k) < radius*radius)\{\par
+109               cutVoxel(i+xcenter,j+ycenter,k+zcenter);\par
+110             \}\par
+111           \}\par
+112       \}\par
+113   \}\par
+114 \}\par
+}
+}
+{\xe \v cutVoxel\:Sculptor}
+{\xe \v Sculptor\:cutVoxel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::cutVoxel (int  {\i x}, int  {\i y}, int  {\i z})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 61                                           \{\par
+62     v[x][y][z].isOn = {\cf17 false};\par
+63 \}\par
+}
+}
+{\xe \v putBox\:Sculptor}
+{\xe \v Sculptor\:putBox}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::putBox (int  {\i x0}, int  {\i x1}, int  {\i y0}, int  {\i y1}, int  {\i z0}, int  {\i z1})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 64                                                                          \{\par
+65     {\cf19 for}({\cf18 int} x = x0_; x<x1_; x++)\{\par
+66        {\cf19 for} ({\cf18 int} y = y0_; y<y1_; y++)\{\par
+67            {\cf19 for} ({\cf18 int} z = z0_; z<z1_; z++)\{\par
+68                v[x][y][z].isOn={\cf17 true};\par
+69                v[x][y][z].r = r;\par
+70                v[x][y][z].g = g;\par
+71                v[x][y][z].b = b;\par
+72                v[x][y][z].a = a;\par
+73            \}\par
+74        \}\par
+75     \}\par
+76     \par
+77 \}\par
+}
+}
+{\xe \v putEllipsoid\:Sculptor}
+{\xe \v Sculptor\:putEllipsoid}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::putEllipsoid (int  {\i xcenter}, int  {\i ycenter}, int  {\i zcenter}, int  {\i rx}, int  {\i ry}, int  {\i rz})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 116                                                                                         \{\par
+117    {\cf18 float} newx, newy, newz;\par
+118 \par
+119     {\cf19 for} ({\cf18 int} x = 0; x < nx; x++)\{\par
+120         {\cf19 for} ({\cf18 int} y = 0; y < ny; y++)\{\par
+121             {\cf19 for} ({\cf18 int} z = 0; z < nz; z++)\{\par
+122             newx = ((float)(x-xcenter)*(float)(x-xcenter))/(rx * rx);\par
+123             newy = ((float)(y-ycenter)*(float)(y-ycenter))/(ry * ry);\par
+124             newz = ((float)(z-zcenter)*(float)(z-zcenter))/(rz * rz);\par
+125 \par
+126             {\cf19 if} ((newx + newy + newz) < 1)\{\par
+127                 putVoxel(x,y,z);\par
+128             \}\par
+129             \}\par
+130         \}\par
+131     \}\par
+132 \}\par
+}
+}
+{\xe \v putSphere\:Sculptor}
+{\xe \v Sculptor\:putSphere}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::putSphere (int  {\i xcenter}, int  {\i ycenter}, int  {\i zcenter}, int  {\i radius})}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 90                                                                          \{\par
+91   {\cf19 for}({\cf18 int} i = -radius; i<=radius; i++)\{\par
+92       {\cf19 for}({\cf18 int} j = -radius; j<=radius; j++)\{\par
+93           {\cf19 for}({\cf18 int} k = -radius; k<=radius; k++)\{\par
+94          \par
+95             {\cf19 if} ((i*i+j*j+k*k) < radius*radius)\{\par
+96               putVoxel(i+xcenter,j+ycenter,k+zcenter);\par
+97             \}\par
+98           \}\par
+99       \}\par
+100   \}\par
+101 \par
+102 \}\par
+}
+}
+{\xe \v putVoxel\:Sculptor}
+{\xe \v Sculptor\:putVoxel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::putVoxel (int  {\i x}, int  {\i y}, int  {\i z})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 54                                           \{\par
+55     v[x][y][z].isOn = {\cf17 true};\par
+56     v[x][y][z].r = r;\par
+57     v[x][y][z].g = g;\par
+58     v[x][y][z].b = b;\par
+59     v[x][y][z].a = a;    \par
+60 \}\par
+}
+}
+{\xe \v setColor\:Sculptor}
+{\xe \v Sculptor\:setColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::setColor (float  {\i r}, float  {\i g}, float  {\i b}, float  {\i alpha})}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 48                                                            \{\par
+49     this->r = r;\par
+50     this->g = g;\par
+51     this->b = b;\par
+52     this->a = alpha;\par
+53 \}\par
+}
+}
+{\xe \v writeOFF\:Sculptor}
+{\xe \v Sculptor\:writeOFF}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Sculptor::writeOFF (char *  {\i filename})}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 152                                      \{\par
+153     {\cf18 int} total, index;\par
+154     ofstream arquivo;\par
+155     total = 0;\par
+156     arquivo.open(filename);\par
+157     arquivo << {\cf22 "OFF\\n"};\par
+158 \par
+159     {\cf19 for} ({\cf18 int} i=0; i < nx; i++)\{\par
+160         {\cf19 for} ({\cf18 int} j = 0; j <ny; j++)\{\par
+161             {\cf19 for} ({\cf18 int} k=0; k <nz; k++)\{\par
+162               {\cf19 if}(v[i][j][k].isOn == {\cf17 true})\{\par
+163                 total++;\par
+164               \}\par
+165             \}\par
+166         \}\par
+167     \}\par
+168 \par
+169     arquivo << total * 8 << {\cf22 " "} << total * 6 << {\cf22 " "} << 0 << {\cf22 "\\n"};\par
+170 \par
+171     {\cf19 for} ({\cf18 int} i=0; i < nx; i++)\{\par
+172         {\cf19 for} ({\cf18 int} j = 0; j <ny; j++)\{\par
+173             {\cf19 for} ({\cf18 int} k=0; k <nz; k++)\{\par
+174               {\cf19 if}(v[i][j][k].isOn == {\cf17 true})\{\par
+175                 arquivo << i - 0.5 << {\cf22 " "} << j + 0.5 << {\cf22 " "} << k - 0.5 << {\cf22 "\\n"} << flush;\par
+176                 arquivo << i - 0.5 << {\cf22 " "} << j - 0.5 << {\cf22 " "} << k - 0.5 << {\cf22 "\\n"} << flush;\par
+177                 arquivo << i + 0.5 << {\cf22 " "} << j - 0.5 << {\cf22 " "} << k - 0.5 << {\cf22 "\\n"} << flush;\par
+178                 arquivo << i + 0.5 << {\cf22 " "} << j + 0.5 << {\cf22 " "} << k - 0.5 << {\cf22 "\\n"} << flush;\par
+179                 arquivo << i - 0.5 << {\cf22 " "} << j + 0.5 << {\cf22 " "} << k + 0.5 << {\cf22 "\\n"} << flush;\par
+180                 arquivo << i - 0.5 << {\cf22 " "} << j - 0.5 << {\cf22 " "} << k + 0.5 << {\cf22 "\\n"} << flush;\par
+181                 arquivo << i + 0.5 << {\cf22 " "} << j - 0.5 << {\cf22 " "} << k + 0.5 << {\cf22 "\\n"} << flush;\par
+182                 arquivo << i + 0.5 << {\cf22 " "} << j + 0.5 << {\cf22 " "} << k + 0.5 << {\cf22 "\\n"} << flush;\par
+183               \}\par
+184             \}\par
+185         \}\par
+186     \}\par
+187 \par
+188     total = 0;\par
+189 \par
+190     {\cf19 for} ({\cf18 int} i=0; i < nx; i++)\{\par
+191         {\cf19 for} ({\cf18 int} j = 0; j < ny; j++)\{\par
+192             {\cf19 for} ({\cf18 int} k=0; k < nz; k++)\{\par
+193               {\cf19 if}(v[i][j][k].isOn == {\cf17 true})\{\par
+194                 index = total*8;\par
+195                 arquivo << fixed;\par
+196 \par
+197                 arquivo << 4 << {\cf22 " "} << index + 0 << {\cf22 " "} << index + 3 << {\cf22 " "} << index + 2 << {\cf22 " "} << index + 1 << {\cf22 " "};\par
+198                 arquivo << setprecision(2) << v[i][j][k].r << {\cf22 " "} << setprecision(2) << v[i][j][k].g << {\cf22 " "} << setprecision(2) << v[i][j][k].b << {\cf22 " "} <<setprecision(2) << v[i][j][k].a << setprecision(2) << {\cf22 "\\n"};\par
+199 \par
+200                 arquivo << 4 << {\cf22 " "} << index + 4 << {\cf22 " "} << index + 5 << {\cf22 " "} << index + 6 << {\cf22 " "} << index + 7 << {\cf22 " "};\par
+201                 arquivo << setprecision(2) << v[i][j][k].r << {\cf22 " "} << setprecision(2) << v[i][j][k].g << {\cf22 " "} << setprecision(2) << v[i][j][k].b << {\cf22 " "} << setprecision(2) << v[i][j][k].a << setprecision(2) << {\cf22 "\\n"};\par
+202 \par
+203                 arquivo << 4 << {\cf22 " "} << index + 0 << {\cf22 " "} << index + 1 << {\cf22 " "} << index + 5 << {\cf22 " "} << index + 4 << {\cf22 " "};\par
+204                 arquivo << setprecision(2) << v[i][j][k].r << {\cf22 " "} << setprecision(2) << v[i][j][k].g << {\cf22 " "} << setprecision(2) << v[i][j][k].b << {\cf22 " "} << setprecision(2) << v[i][j][k].a << setprecision(2) << {\cf22 "\\n"};\par
+205 \par
+206                 arquivo << 4 << {\cf22 " "} << index + 0 << {\cf22 " "} << index + 4 << {\cf22 " "} << index + 7 << {\cf22 " "} << index + 3 << {\cf22 " "};\par
+207                 arquivo << setprecision(2) << v[i][j][k].r << {\cf22 " "} << setprecision(2) << v[i][j][k].g << {\cf22 " "} << setprecision(2) << v[i][j][k].b << {\cf22 " "} << setprecision(2) << v[i][j][k].a << setprecision(2) << {\cf22 "\\n"};\par
+208 \par
+209                 arquivo << 4 << {\cf22 " "} << index + 7 << {\cf22 " "} << index + 6 << {\cf22 " "} << index + 2 << {\cf22 " "} << index + 3 << {\cf22 " "};\par
+210                 arquivo << setprecision(2) << v[i][j][k].r << {\cf22 " "} <<setprecision(2) << v[i][j][k].g << {\cf22 " "} << setprecision(2) << v[i][j][k].b << {\cf22 " "} <<setprecision(2) << v[i][j][k].a << setprecision(2) << {\cf22 "\\n"};\par
+211 \par
+212                 arquivo << 4 << {\cf22 " "} << index + 1 << {\cf22 " "} << index + 2 << {\cf22 " "} << index + 6 << {\cf22 " "} << index + 5 << {\cf22 " "};\par
+213                 arquivo << setprecision(2) << v[i][j][k].r << {\cf22 " "} << setprecision(2) << v[i][j][k].g << {\cf22 " "} << setprecision(2) << v[i][j][k].b << {\cf22 " "} << setprecision(2) << v[i][j][k].a << setprecision(2) << {\cf22 "\\n"};\par
+214 \par
+215                 total++;\par
+216               \}\par
+217             \}\par
+218         \}\par
+219     \}\par
+220 \par
+221     arquivo.close();\par
+222 \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+A documenta\'E7\'E3o para essa classe foi gerada a partir dos seguintes arquivos:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Projeto Escultor3D/{\b sculptor.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Projeto Escultor3D/{\b sculptor.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia da Estrutura Voxel\par \pard\plain 
+{\tc\tcl2 \v Voxel}
+{\xe \v Voxel}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\par
+{
+{\f2 #include <sculptor.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Atributos P\'FAblicos\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b r}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b g}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b b}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b a}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b isOn}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Atributos\par
+\pard\plain 
+{\xe \v a\:Voxel}
+{\xe \v Voxel\:a}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float Voxel::a}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v b\:Voxel}
+{\xe \v Voxel\:b}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float Voxel::b}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v g\:Voxel}
+{\xe \v Voxel\:g}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float Voxel::g}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v isOn\:Voxel}
+{\xe \v Voxel\:isOn}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Voxel::isOn}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v r\:Voxel}
+{\xe \v Voxel\:r}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float Voxel::r}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+A documenta\'E7\'E3o para essa estrutura foi gerada a partir do seguinte arquivo:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Projeto Escultor3D/{\b sculptor.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Arquivos{\tc \v Arquivos}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia do Arquivo Projeto Escultor3D/main.cpp\par \pard\plain 
+{\tc\tcl2 \v Projeto Escultor3D/main.cpp}
+{\xe \v Projeto Escultor3D/main.cpp}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "sculptor.h"}\par
+{\f2 #include <fstream>}\par
+{\f2 #include <cstdlib>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 8            \{\par
+9   {\cf20 // cria um escultor cuja matriz tem 50x50x50 voxels}\par
+10   Sculptor sonic(50,50,50);\par
+11 \par
+12   {\cf20 //cabe\'E7a}\par
+13   sonic.setColor(0,0.2,0.8,1.0); {\cf20 // azul}\par
+14   sonic.putBox(20,29,20,27,20,28);\par
+15   sonic.cutBox(20,21,20,27,20,21);\par
+16   sonic.cutBox(20,21,20,27,27,28);\par
+17   sonic.cutBox(28,29,20,27,20,21);\par
+18   sonic.cutBox(28,29,20,27,27,28);\par
+19   sonic.cutBox(20,29,20,21,20,21);\par
+20   sonic.cutBox(20,29,20,21,27,28);  \par
+21   sonic.cutBox(20,29,26,27,20,21);\par
+22   sonic.cutBox(20,29,26,27,27,28);\par
+23   sonic.cutBox(20,21,20,21,20,28);\par
+24   sonic.cutBox(20,21,26,27,20,28);\par
+25   sonic.cutBox(28,29,20,21,20,28);\par
+26   sonic.cutBox(28,29,26,27,20,28);\par
+27 \par
+28   {\cf20 //orelhas}\par
+29   sonic.setColor(1,0.8,0.6,1.0);{\cf20 //pele}\par
+30   sonic.putVoxel(20,26,25);\par
+31   sonic.putVoxel(28,26,25);\par
+32   sonic.setColor(0,0.2,0.8,1.0); {\cf20 // azul}\par
+33   sonic.putVoxel(19,26,25);\par
+34   sonic.putVoxel(19,25,25);\par
+35   sonic.putVoxel(19,27,25);\par
+36   sonic.putVoxel(20,27,25);\par
+37   sonic.putVoxel(21,27,25);\par
+38   sonic.putVoxel(20,26,24);\par
+39   sonic.putVoxel(29,26,25);\par
+40   sonic.putVoxel(29,27,25);\par
+41   sonic.putVoxel(27,27,25);\par
+42   sonic.putVoxel(29,25,25);\par
+43   sonic.putVoxel(28,27,25);\par
+44   sonic.putVoxel(28,26,24);\par
+45 \par
+46   {\cf20 //olhos}\par
+47   sonic.setColor(1.0,1.0,1.0,1.0);{\cf20 //branco}\par
+48   sonic.putVoxel(22,24,27);\par
+49   sonic.putVoxel(22,23,27);\par
+50   sonic.putVoxel(22,22,27);\par
+51   sonic.putVoxel(23,24,27);\par
+52   sonic.setColor(0.2,0.6,0.2,1.0);{\cf20 //verde}\par
+53   sonic.putVoxel(23,23,27);\par
+54   sonic.setColor(0,0,0,1.0);{\cf20 //preto}\par
+55   sonic.putVoxel(23,22,27);\par
+56   sonic.setColor(1.0,1.0,1.0,1.0);{\cf20 //branco}\par
+57   sonic.putVoxel(24,22,27);\par
+58   sonic.putVoxel(25,24,27);\par
+59   sonic.putVoxel(26,24,27);\par
+60   sonic.putVoxel(26,23,27);\par
+61   sonic.putVoxel(26,22,27);\par
+62   sonic.setColor(0.2,0.6,0.2,1.0);{\cf20 //verde}\par
+63   sonic.putVoxel(25,23,27);\par
+64   sonic.setColor(0,0,0,1.0);{\cf20 //preto}\par
+65   sonic.putVoxel(25,22,27);\par
+66 \par
+67   {\cf20 //bochecha}\par
+68   sonic.setColor(1,0.8,0.6,1.0);{\cf20 //pele}\par
+69   sonic.putBox(21,28,20,22,27,29);\par
+70 \par
+71   {\cf20 //nariz}\par
+72   sonic.setColor(0,0,0,1.0);{\cf20 //preto}\par
+73   sonic.putVoxel(24,21,29);\par
+74   sonic.setColor(0.6,0,0,1.0);{\cf20 //vermelho}\par
+75   sonic.putVoxel(22,20,29);\par
+76 \par
+77   {\cf20 //crista}\par
+78   sonic.setColor(0,0.2,0.8,1.0); {\cf20 // azul}\par
+79   sonic.putVoxel(24,27,23);\par
+80   sonic.putVoxel(24,27,22);\par
+81   sonic.putVoxel(24,27,21);\par
+82   sonic.putVoxel(24,27,20);\par
+83   sonic.putVoxel(24,27,19);\par
+84   sonic.putVoxel(24,27,18);\par
+85   sonic.putVoxel(24,27,17);\par
+86   sonic.putVoxel(24,27,16);\par
+87   sonic.putVoxel(24,27,15);\par
+88   sonic.putVoxel(24,26,20);\par
+89   sonic.putVoxel(24,26,19);\par
+90   sonic.putVoxel(24,26,18);\par
+91   sonic.putVoxel(24,26,17);\par
+92   sonic.putVoxel(24,26,16);\par
+93   sonic.putVoxel(24,25,17);\par
+94   sonic.putVoxel(24,25,18);\par
+95   sonic.putVoxel(24,25,19);\par
+96   sonic.putVoxel(24,24,19);\par
+97   sonic.putVoxel(24,24,18);\par
+98   sonic.putVoxel(24,23,19);\par
+99   sonic.putVoxel(24,22,19);\par
+100   sonic.putVoxel(24,22,18);\par
+101   sonic.putVoxel(24,22,17);\par
+102   sonic.putVoxel(24,22,16);\par
+103   sonic.putVoxel(24,22,15);\par
+104   sonic.putVoxel(24,21,16);\par
+105   sonic.putVoxel(24,21,17);\par
+106   sonic.putVoxel(24,21,18);\par
+107   sonic.putVoxel(24,21,19);\par
+108   sonic.putVoxel(24,20,20);\par
+109   sonic.putVoxel(24,20,19);\par
+110   sonic.putVoxel(24,20,18);\par
+111   sonic.putVoxel(24,20,17);\par
+112   sonic.putVoxel(24,19,18);\par
+113   sonic.putVoxel(24,19,19);\par
+114   sonic.putVoxel(24,19,20);\par
+115   sonic.putVoxel(24,19,21);\par
+116   sonic.putVoxel(24,18,21);\par
+117   sonic.putVoxel(24,17,21);\par
+118   sonic.putVoxel(24,17,20);\par
+119   sonic.putVoxel(24,17,19);\par
+120   sonic.putVoxel(24,17,18);\par
+121   sonic.putVoxel(24,17,17);\par
+122   sonic.putVoxel(24,16,18);\par
+123   sonic.putVoxel(24,16,19);\par
+124   sonic.putVoxel(24,16,20);\par
+125   sonic.putVoxel(24,16,21);\par
+126   sonic.putVoxel(24,15,20);\par
+127   sonic.putVoxel(24,15,21);\par
+128   sonic.putVoxel(24,15,19);\par
+129   \par
+130   {\cf20 //corpo}\par
+131   sonic.setColor(0,0.2,0.8,1.0); {\cf20 // azul}\par
+132   sonic.putBox(22,27,15,20,22,27);\par
+133   sonic.setColor(1,0.8,0.6,1.0);{\cf20 //pele}\par
+134   sonic.putVoxel(23,18,26);\par
+135   sonic.putVoxel(24,18,26);\par
+136   sonic.putVoxel(25,18,26);\par
+137   sonic.putVoxel(23,17,26);\par
+138   sonic.putVoxel(24,17,26);\par
+139   sonic.putVoxel(25,17,26);\par
+140   sonic.putVoxel(23,16,26);\par
+141   sonic.putVoxel(24,16,26);\par
+142   sonic.putVoxel(25,16,26);\par
+143 \par
+144   {\cf20 //bra\'E7os}\par
+145   sonic.setColor(1,0.8,0.6,1.0);{\cf20 //pele}\par
+146   sonic.putBox(18,22,18,19,25,26);\par
+147   sonic.putBox(18,19,18,19,25,29);\par
+148   sonic.setColor(1.0,1.0,1.0,1.0);{\cf20 //branco}\par
+149   sonic.putBox(17,20,17,20,29,32);\par
+150   sonic.setColor(1,0.8,0.6,1.0);{\cf20 //pele}\par
+151   sonic.putBox(27,28,18,19,21,25);\par
+152   sonic.putBox(27,28,15,19,20,21);\par
+153   sonic.setColor(1.0,1.0,1.0,1.0);{\cf20 //branco}\par
+154   sonic.putBox(26,29,12,15,19,22);\par
+155 \par
+156   {\cf20 //pernas}\par
+157   sonic.setColor(0,0.2,0.8,1.0); {\cf20 // azul}\par
+158   sonic.putBox(26,27,15,16,26,30);\par
+159   sonic.putBox(26,27,12,16,29,30);\par
+160   sonic.setColor(1.0,1.0,1.0,1.0); {\cf20 // branco}\par
+161   sonic.putBox(25,28,11,12,28,31);\par
+162   sonic.setColor(0.8,0.2,0,1.0); {\cf20 // vermelho}\par
+163   sonic.putBox(25,28,9,11,28,34);\par
+164   sonic.setColor(1.0,1.0,1.0,1.0); {\cf20 // branco}\par
+165   sonic.putBox(25,28,10,11,32,33);\par
+166   sonic.setColor(0,0.2,0.8,1.0); {\cf20 // azul}\par
+167   sonic.putBox(22,23,11,16,23,24);\par
+168   sonic.putBox(22,23,11,12,20,24);\par
+169   sonic.setColor(1.0,1.0,1.0,1.0); {\cf20 // branco}\par
+170   sonic.putBox(21,24,10,13,19,20);\par
+171   sonic.setColor(0.8,0.2,0,1.0); {\cf20 // vermelho}\par
+172   sonic.putBox(21,24,7,13,17,19);\par
+173   sonic.setColor(1.0,1.0,1.0,1.0); {\cf20 // branco}\par
+174   sonic.putBox(21,24,8,9,18,19);\par
+175 \par
+176   {\cf20 //chao}\par
+177   sonic.setColor(0.2,0.4,0,1.0); {\cf20 // verde}\par
+178   sonic.putBox(15,35,6,7,15,35);\par
+179   sonic.setColor(0.3,0.6,0,1.0); {\cf20 // verde2}\par
+180   sonic.putBox(15,35,6,7,15,18);\par
+181   sonic.putBox(15,35,6,7,21,24);\par
+182   sonic.putBox(15,35,6,7,27,30);\par
+183   sonic.putBox(15,35,6,7,33,35);\par
+184   sonic.setColor(0.4,0.2,0,1.0); {\cf20 // marrom}\par
+185   sonic.putBox(15,35,4,6,15,35);\par
+186   \par
+187   {\cf20 //anel}\par
+188   sonic.setColor(1.0,0.8,0,1.0);\par
+189   sonic.putSphere(24,20,35,5);\par
+190   sonic.cutSphere(24,20,36,5);\par
+191   sonic.cutSphere(24,20,33,4);\par
+192   \par
+193 \par
+194 \par
+195   \par
+196   {\cf20 // grava a escultura digital no arquivo "sonic.off"}\par
+197   sonic.writeOFF({\cf22 "sonic.off"});\par
+198   \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia do Arquivo Projeto Escultor3D/sculptor.cpp\par \pard\plain 
+{\tc\tcl2 \v Projeto Escultor3D/sculptor.cpp}
+{\xe \v Projeto Escultor3D/sculptor.cpp}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "sculptor.h"}\par
+{\f2 #include <fstream>}\par
+{\f2 #include <cstdlib>}\par
+{\f2 #include <iomanip>}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia do Arquivo Projeto Escultor3D/sculptor.h\par \pard\plain 
+{\tc\tcl2 \v Projeto Escultor3D/sculptor.h}
+{\xe \v Projeto Escultor3D/sculptor.h}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Componentes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b Voxel}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Sculptor}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+sculptor.h\par \pard\plain 
+{\tc\tcl2 \v Projeto Escultor3D/sculptor.h}
+{\xe \v Projeto Escultor3D/sculptor.h}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+V\'E1 para a documenta\'E7\'E3o desse arquivo.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf17 struct }Voxel \{\par
+2   {\cf18 float} r,g,b; {\cf20 // Cores}\par
+3   {\cf18 float} a;\par
+4 {\cf20 // Transparencia}\par
+5   {\cf18 bool} isOn; {\cf20 // Incluido ou nao}\par
+6 \};\par
+7 \par
+8 {\cf17 class }Sculptor \{\par
+9 {\cf17 private}:\par
+10   Voxel ***v;\par
+11   {\cf20 // 3D matrix}\par
+12   {\cf18 int} nx,ny,nz; {\cf20 // Dimensions}\par
+13   {\cf18 float} r,g,b,a; {\cf20 // Current drawing color}\par
+14 \par
+15 {\cf17 public}:\par
+16   Sculptor({\cf18 int} _nx, {\cf18 int} _ny, {\cf18 int} _nz);\par
+17   ~Sculptor();\par
+18   {\cf18 void} setColor({\cf18 float} r, {\cf18 float} g, {\cf18 float} b, {\cf18 float} alpha);\par
+19   {\cf18 void} putVoxel({\cf18 int} x, {\cf18 int} y, {\cf18 int} z);\par
+20   {\cf18 void} cutVoxel({\cf18 int} x, {\cf18 int} y, {\cf18 int} z);\par
+21   {\cf18 void} putBox({\cf18 int} x0, {\cf18 int} x1, {\cf18 int} y0, {\cf18 int} y1, {\cf18 int} z0, {\cf18 int} z1);\par
+22   {\cf18 void} cutBox({\cf18 int} x0, {\cf18 int} x1, {\cf18 int} y0, {\cf18 int} y1, {\cf18 int} z0, {\cf18 int} z1);\par
+23   {\cf18 void} putSphere({\cf18 int} xcenter, {\cf18 int} ycenter, {\cf18 int} zcenter, {\cf18 int} radius);\par
+24   {\cf18 void} cutSphere({\cf18 int} xcenter, {\cf18 int} ycenter, {\cf18 int} zcenter, {\cf18 int} radius);\par
+25   {\cf18 void} putEllipsoid({\cf18 int} xcenter, {\cf18 int} ycenter, {\cf18 int} zcenter, {\cf18 int} rx, {\cf18 int} ry, {\cf18 int} rz);\par
+26   {\cf18 void} cutEllipsoid({\cf18 int} xcenter, {\cf18 int} ycenter, {\cf18 int} zcenter, {\cf18 int} rx, {\cf18 int} ry, {\cf18 int} rz);\par
+27   {\cf18 void} writeOFF({\cf18 char} *filename);\par
+28 \};\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Sum\'E1rio\par 
+\pard\plain 
+{\tc \v Sum\'E1rio}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
