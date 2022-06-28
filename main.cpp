@@ -9,6 +9,14 @@ int main() {
   // cria um escultor cuja matriz tem 50x50x50 voxels
   Sculptor sonic(50,50,50);
 
+  //programa teste elipsoid
+  Sculptor elipsoid (80,80,80);
+  elipsoid.setColor(1,0,0,1.0); // vermelho
+  elipsoid.putEllipsoid(2,2,2,1,2,4);
+  elipsoid.cutEllipsoid(1,1,1,2,2,2);
+    elipsoid.writeOFF((char*)"elipsoid.off");
+
+  
   //cabeça
   sonic.setColor(0,0.2,0.8,1.0); // azul
   sonic.putBox(20,29,20,27,20,28);
